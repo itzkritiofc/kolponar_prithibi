@@ -1,0 +1,131 @@
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-box {
+    border: 2px dashed #4CAF50;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.upload-box:hover {
+    background-color: #e8f5e9;
+    border-color: #2e7d32;
+}
+
+.upload-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.upload-box p span {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upload-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+#preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.preview-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.preview-item img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.preview-item .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+#galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .upload-box, textarea {
+        max-width: 100%;
+    }
+
+    #preview, #galleryContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
