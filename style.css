@@ -3,25 +3,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e8f5e9; /* Light green background */
+    background-color: #e8f5e9; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth; 
 }
 
 /* Header styling */
 header {
-    background: #388e3c; /* Dark green color for the header */
+    background: #388e3c; 
     color: white;
     padding: 1em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between title and nav buttons */
+    justify-content: space-between; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -34,7 +34,7 @@ header h1 {
 }
 
 header a {
-    color: inherit; /* Ensure the link color inherits the title color */
+    color: inherit;
     text-decoration: none;
 }
 
@@ -56,13 +56,13 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove the default underline */
-    color: white; /* Initial text color */
+    text-decoration: none;
+    color: white;
     padding: 5px 0;
     position: relative;
     display: inline-block;
-    font-weight: bold; /* Make the text bold */
-    transition: color 0.3s ease; /* Smooth color transition */
+    font-weight: bold; 
+    transition: color 0.3s ease;
 }
 
 /* Hover underline animation */
@@ -70,27 +70,27 @@ nav ul li a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px; /* Thickness of the underline */
-    background-color: white; /* Underline color */
+    height: 2px; 
+    background-color: white; 
     left: 0;
     bottom: 0;
-    transition: width 0.3s ease; /* Animation timing for underline */
+    transition: width 0.3s ease; 
 }
 
 /* On hover, change text color to green */
 nav ul li a:hover {
-    color: #dce2dc; /* Hover text color */
+    color: #dce2dc;
 }
 
 /* On hover, expand the underline */
 nav ul li a:hover::after {
-    width: 100%; /* Full-width underline on hover */
+    width: 100%;
 }
 
 
 /* Main content styling */
 main {
-    flex: 1; /* Allow main content to grow and push footer to the bottom */
+    flex: 1;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -101,7 +101,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh; /* Ensure the intro section takes up full viewport height */
+    min-height: 70vh; 
     position: relative;
 }
 
@@ -121,45 +121,45 @@ main {
 /* About section styling */
 #about {
     padding: 40px 20px;
-    background-color: #a5d6a7; /* Light green background */
+    background-color: #a5d6a7; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Space between sections */
+    margin-top: 20px; 
 }
 
 .about-content {
     display: flex;
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Center align text and image vertically */
+    justify-content: space-between;
+    align-items: center; 
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .about-text {
     flex: 1;
-    padding-right: 20px; /* Space between text and image */
+    padding-right: 20px; 
 }
 
 .about-text h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #388e3c; /* Dark green for the heading */
+    color: #388e3c; 
 }
 
 .about-text p {
     font-size: 1.2em;
-    color: #333; /* Darker text color for better readability */
+    color: #333;
     line-height: 1.6;
 }
 
 .about-image {
     flex: 1;
-    text-align: right; /* Align image to the right side */
+    text-align: right; 
 }
 
 .about-image img {
     width: 100%;
-    max-width: 400px; /* Adjust to fit your design */
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -178,9 +178,9 @@ footer {
     background: #388e3c;
     color: white;
     text-align: center;
-    padding: 1em; /* Ensure padding is sufficient for readability */
-    font-size: 0.9em; /* Slightly smaller font size */
-    margin-top: auto; /* Push footer to the bottom */
+    padding: 1em;
+    font-size: 0.9em; 
+    margin-top: auto; 
 }
 
 
@@ -226,12 +226,12 @@ footer {
     }
 
     #upload input[type="file"] {
-        width: 100%; /* Full width on small screens */
-        box-sizing: border-box; /* Include padding and border in width */
+        width: 100%;
+        box-sizing: border-box;
     }
 
     #upload button {
-        width: 100%; /* Full width on small screens */
+        width: 100%;
     }
 }
 
