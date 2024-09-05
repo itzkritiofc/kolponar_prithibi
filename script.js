@@ -1,6 +1,6 @@
 function handleFiles(files) {
     const preview = document.getElementById('preview');
-    preview.innerHTML = ''; // Clear the preview
+    preview.innerHTML = ''; 
 
     if (files.length > 0) {
         Array.from(files).forEach(file => {
